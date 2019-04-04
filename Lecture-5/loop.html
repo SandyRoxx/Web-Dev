@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="input" id="in">
+    <button onclick="printLoop()" >Loop</button>
+    <ul id="list">
+
+    </ul>
+
+    <script>
+        function printLoop(){
+            let input=document.getElementById("in")
+            let N= parseInt(input.value)
+            let list=document.getElementById("list")
+            let listHtml=" "
+
+            for (let index = 1; index <= N ; index++) {
+
+                if(index%15===0){
+                    listHtml+='<li>'+ "fizzbuzz" +'</li>'
+                }else if(index%3===0){
+                    listHtml+='<li>' + "fizz" +'</li>'
+                }else if(index%5===0){
+                    listHtml+='<li>' + "buzz" +'</li>'
+                }else{
+                    listHtml+='<li>' + index +'</li>'
+                }     
+            }
+            list.innerHTML=listHtml
+        }
+    </script>
+
+</body>
+</html>

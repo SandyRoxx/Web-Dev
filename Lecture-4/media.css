@@ -1,0 +1,31 @@
+
+body {
+    margin: 0; 
+}
+
+.box {
+    background-color: blue;
+    height: 100%;
+    font-size: 22px;
+    padding: 20px;
+
+}
+
+.small-box {
+    color: white;
+    margin-left: 15px;
+    display: inline;
+     
+}
+
+.small-box:hover{
+    cursor: pointer;
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+@media screen and (max-width: 300px){
+    .small-box{
+        display: block;
+    }
+
+}

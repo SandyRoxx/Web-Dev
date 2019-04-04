@@ -1,0 +1,25 @@
+.box{
+    background-color: aliceblue;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid black;
+
+}
+img{
+    margin-top: 20px;
+    height: 150px;
+    width: 300px;
+    border: 1px solid black;
+}
+.small_box1{
+    background-color: blanchedalmond;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.small_box2{
+    color: aliceblue;
+    background-color: black;
+    margin: 20px;
+    border: 1px solid black;
+}
